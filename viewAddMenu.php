@@ -24,18 +24,18 @@
         <form>
             <div class="form-group">
                 <label for="inputNama">Nama</label>
-                <input type="text" class="form-control" id="inputNama" placeholder="1234 Main St">
+                <input type="Nama" class="form-control" id="inputNama" placeholder="Nama">
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="inputKategori">Kategori</label>
-                <input type="password" class="form-control" id="inpinputKategoriutNama" placeholder="Password">
+                <input type="Kategori" class="form-control" id="inpinputKategoriutNama" placeholder="Kategori">
                 </div>
 
                 <div class="form-group col-md-6">
                 <label for="inputHarga">Harga</label>
-                <input type="email" class="form-control" id="inputHarga" placeholder="Email">
+                <input type="Harga" class="form-control" id="inputHarga" placeholder="Harga">
                 </div>
                 
             </div>

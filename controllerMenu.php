@@ -15,4 +15,7 @@
         $menu->harga = $_POST['inputHarga'];
     }
 
+    if (!isset($_POST('buttonTambah'))) {
+         
+    }
 ?>

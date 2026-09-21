@@ -1,3 +1,12 @@
+<?php require("controllerMenu.php");
+  
+  if(isset($_GET['updateID'])){
+    $menuID = $_GET['updateID'];
+    $menu = getMenuWithID($_GET['updateID']);
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,39 +20,39 @@
 <body>
     <div class="container p-3">
       <div class="card text-center">
-
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
               <a class="nav-link" href="viewMenu.php">List Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="viewAddMember.php">Tambah Menu</a>
+              <a class="nav-link" href="viewAddMember.php">Tambah Menu</a>
             </li>
           </ul>
         </div>
 
         <div class="card-body">
-          <h1>Menambah Menu Baru</h1>
+          <h1>Update Menu</h1>
           <form method= "POST" action = "controllerMenu.php">
           <div class="form-group">
             <label for="inputNama">Nama</label>
-              <input type="text" class="form-control" name="inputNama">
+            <input type="text" class="form-control" name="inputNama" value="<?=$menu->nama?>">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputKategori">Kategori</label>
+              <input type="text" class="form-control" name="inputKategori" value="<?=$menu->kategori?>">
             </div>
 
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputKategori">Kategori</label>
-                <input type="text" class="form-control" name="inputKategori">
-              </div>
-
-              <div class="form-group col-md-6">
-                <label for="inputHarga">Harga</label>
-                <input type="text" class="form-control" name="inputHarga">
-              </div>
+            <div class="form-group col-md-6">
+              <label for="inputHarga">Harga</label>
+              <input type="text" class="form-control" name="inputHarga" value="<?=$menu->harga?>">
             </div>
+          </div>
 
-            <button name="buttonTambah" type="submit" class="btn btn-primary">Tambah</button>
+          <input type="hidden" name="inputID" value="<?=$menuID?>">
+          <button name="buttonUpdate" type="submit" class="btn btn-primary">Update</button>
           </form>
         </div>
       </div>

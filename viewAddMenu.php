@@ -21,21 +21,21 @@
   </div>
   <div class="card-body">
     <h1>Menambah Menu Baru</h1>
-        <form method="POST" action="controllerMenu.php" class="w-75 mx-auto">
+        <form method= "POST" action = "controllerMenu.php">
             <div class="form-group">
                 <label for="inputNama">Nama</label>
-                <input type="Nama" class="form-control" nama="inputNama" placeholder="Nama">
+                <input type="text" class="form-control" name="inputNama">
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="inputKategori">Kategori</label>
-                <input type="Kategori" class="form-control" nama="inpinputKategoriutNama" placeholder="Kategori">
+                <input type="text" class="form-control" name="inputKategori">
                 </div>
 
                 <div class="form-group col-md-6">
                 <label for="inputHarga">Harga</label>
-                <input type="Harga" class="form-control" nama="inputHarga" placeholder="Harga">
+                <input type="text" class="form-control" name="inputHarga">
                 </div>
                 
             </div>

@@ -1,3 +1,5 @@
+<?php require("controllerMenu.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,36 +37,33 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>
-        <button class="btn btn-warning">Update</button>
-        <button class="btn btn-danger">Delate</button>
-</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>
-        <button class="btn btn-warning">Update</button>
-        <button class="btn btn-danger">Delate</button>
-</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>
-        <button class="btn btn-warning">Update</button>
-        <button class="btn btn-danger">Delate</button>
-</td>
-    </tr>
+
+
+  
+    <?php
+    $counter = 0;
+    $allmenu = getAllMenu();
+    foreach ($allmenu as $index => $member){
+      $counter++;
+      ?>
+        <tr>
+          <th scope="row"> <?=$counter?> </th>
+          <td> <?=$member->nama?> </td>
+          <td> <?=$member->kategori?> </td>
+          <td> <?=$member->harga?> </td>
+          <td>
+            <button class="btn btn-warning">Update</button>
+          <a href="controllerMenu.php?deleteID=<?=$index?>">
+            <button class="btn btn-danger">Delete</button>
+          </a>
+          </td>
+        </tr>
+      <?php
+    }
+    ?>
+
+
+      
   </tbody>
 </table>
     </div>

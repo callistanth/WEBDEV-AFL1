@@ -42,12 +42,20 @@
       <td>Mark</td>
       <td>Otto</td>
       <td>@mdo</td>
+      <td>
+        <button class="btn btn-warning">Update</button>
+        <button class="btn btn-danger">Delate</button>
+    </tr>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Jacob</td>
       <td>Thornton</td>
       <td>@fat</td>
+      <td>
+        <button class="btn btn-warning">Update</button>
+        <button class="btn btn-danger">Delate</button>
+    </tr>
     </tr>
     <tr>
       <th scope="row">3</th>

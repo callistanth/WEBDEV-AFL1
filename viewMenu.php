@@ -66,6 +66,29 @@
         <button class="btn btn-warning">Update</button>
         <button class="btn btn-danger">Delate</button>
     </tr>
+  
+    <?php
+    $counter = 0;
+    $allmenu = getAllMenu();
+    foreach ($allmenu as $index => $member){
+      $counter++;
+      ?>
+        <tr>
+          <th scope="row"> <?=$counter?> </th>
+          <td> <?=$member->nama?> </td>
+          <td> <?=$member->kategori?> </td>
+          <td> <?=$member->harga?> </td>
+          <td>
+            <button class="btn btn-warning">Update</button>
+          <a href="controllerMenu.php?deleteID=<?=$index?>">
+            <button class="btn btn-danger">Delete</button>
+          </a>
+          </td>
+        </tr>
+      <?php
+    }
+    ?>
+
   </tbody>
 </table>
     </div>

@@ -21,6 +21,7 @@
   </div>
   <div class="card-body">
     <h1>Menambah Menu Baru</h1>
+
         <form method="POST" action="controllerMenu.php" class="w-75 mx-auto">
             <div class="form-group">
                 <label for="inputNama">Nama</label>

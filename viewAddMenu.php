@@ -24,18 +24,18 @@
         <form method="POST" action="controllerMenu.php" class="w-75 mx-auto">
             <div class="form-group">
                 <label for="inputNama">Nama</label>
-                <input type="Nama" class="form-control" name="inputNama" placeholder="Nama">
+                <input type="Nama" class="form-control" nama="inputNama" placeholder="Nama">
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="inputKategori">Kategori</label>
-                <input type="Kategori" class="form-control" name="inpinputKategoriutNama" placeholder="Kategori">
+                <input type="Kategori" class="form-control" nama="inpinputKategoriutNama" placeholder="Kategori">
                 </div>
 
                 <div class="form-group col-md-6">
                 <label for="inputHarga">Harga</label>
-                <input type="Harga" class="form-control" name="inputHarga" placeholder="Harga">
+                <input type="Harga" class="form-control" nama="inputHarga" placeholder="Harga">
                 </div>
                 
             </div>

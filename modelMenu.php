@@ -1,6 +1,6 @@
 <?php
 
-class member{
+class modelMenu{
     public $nama;
     public $kategori;
     public $harga;

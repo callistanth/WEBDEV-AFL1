@@ -8,14 +8,15 @@
     }
   
 
-    function createMember() {
+    function createMenu() {
         $menu = new modelMenu();
-        $menu->name = $_POST['inputName'];
+        $menu->nama = $_POST['inputName'];
         $menu->kategori = $_POST['inputKategori'];
         $menu->harga = $_POST['inputHarga'];
     }
 
     if (!isset($_POST('buttonTambah'))) {
-         
+         createMenu();
+         header("Location:viewMenu.php");
     }
 ?>

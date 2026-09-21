@@ -1,9 +1,9 @@
 <?php
 
-class member{
-    public $nama
-    public $kategori
-    public $harga
+class modelMenu{
+    public $nama;
+    public $kategori;
+    public $harga;
 }
 
 ?>

@@ -21,25 +21,25 @@
   </div>
   <div class="card-body">
     <h1>Menambah Menu Baru</h1>
-        <form>
+        <form method= "POST" action = "controllerMenu.php">
             <div class="form-group">
                 <label for="inputNama">Nama</label>
-                <input type="text" class="form-control" id="inputNama" placeholder="1234 Main St">
+                <input type="text" class="form-control" name="inputNama">
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="inputKategori">Kategori</label>
-                <input type="password" class="form-control" id="inpinputKategoriutNama" placeholder="Password">
+                <input type="text" class="form-control" name="inputKategori">
                 </div>
 
                 <div class="form-group col-md-6">
                 <label for="inputHarga">Harga</label>
-                <input type="email" class="form-control" id="inputHarga" placeholder="Email">
+                <input type="text" class="form-control" name="inputHarga">
                 </div>
                 
             </div>
-            <button type="submit" class="btn btn-primary">Tambah</button>
+            <button name="buttonTambah" type="submit" class="btn btn-primary">Tambah</button>
         </form>
   </div>
   </div>

@@ -38,6 +38,8 @@
   </thead>
   <tbody>
 
+
+  
     <?php
     $counter = 0;
     $allmenu = getAllMenu();
@@ -50,8 +52,10 @@
           <td> <?=$member->kategori?> </td>
           <td> <?=$member->harga?> </td>
           <td>
-          <button class="btn btn-warning">Update</button>
-          <button class="btn btn-danger">Delate</button>
+            <button class="btn btn-warning">Update</button>
+          <a href="controllerMenu.php?deleteID=<?=$index?>">
+            <button class="btn btn-danger">Delete</button>
+          </a>
           </td>
         </tr>
       <?php

@@ -21,9 +21,23 @@
         return $_SESSION['menulist'];
     }
 
+
+    function deleteMenu($menuIndex){
+        unset($_SESSION['menulist'][$menuIndex]); // array 0, 1, 2
+    }
+
+
+
     //jika buttonTambah di klik
     if(isset($_POST['buttonTambah'])){
         createMenu();
+        header("Location:viewMenu.php"); //kembali ke halaman lain
+    }
+
+
+    //jika buttonDelete di klik
+    if(isset($_GET['deleteID'])){
+        deleteMenu($_GET['deleteID']);
         header("Location:viewMenu.php"); //kembali ke halaman lain
     }
 

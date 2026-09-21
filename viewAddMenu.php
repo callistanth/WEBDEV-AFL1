@@ -8,7 +8,19 @@
 </head>
 <body>
     <div class="container p-3">
-        <h1>Menambah Menu Baru</h1>
+        <div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="viewMenu.php">List Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="viewAddMember.php">Tambah Menu</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h1>Menambah Menu Baru</h1>
         <form>
             <div class="form-group">
                 <label for="inputNama">Nama</label>
@@ -27,17 +39,10 @@
                 </div>
                 
             </div>
-            
-            <div class="form-group">
-                <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                    Check me out
-                </label>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Tambah</button>
         </form>
-    </div>
+  </div>
+  </div>
+  </div>
 </body>
 </html>

@@ -7,6 +7,21 @@
     <title>Menu</title>
 </head>
 <body>
+       <div class="container p-3">
+        <div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="viewMenu.php">List Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="viewAddMenu.php">Tambah Menu</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+
+   
     <div class="container p-3">
         <h1>List Menu MichCall</h1>
         <table class="table">
@@ -43,6 +58,8 @@
     </tr>
   </tbody>
 </table>
+    </div>
+    </div>
     </div>
 </body>
 </html>

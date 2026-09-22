@@ -32,7 +32,7 @@
             <tr>
               <th scope="col">No</th>
               <th scope="col">Nama Menu</th>
-              <th scope="col">kategori</th>
+              <th scope="col">Kategori</th>
               <th scope="col">Harga</th>
               <th scope="col">Action</th>
             </tr>
@@ -43,15 +43,15 @@
           <?php
           $counter = 0;
           $allmenu = getAllMenu();
-          foreach ($allmenu as $index => $member){
+          foreach ($allmenu as $index => $menu){
             $counter++;
             ?>
 
               <tr>
                 <th scope="row"> <?=$counter?> </th>
-                <td> <?=$member->nama?> </td>
-                <td> <?=$member->kategori?> </td>
-                <td> <?=$member->harga?> </td>
+                <td> <?=$menu->nama?> </td>
+                <td> <?=$menu->kategori?> </td>
+                <td> <?=$menu->harga?> </td>
                 <td>
                 <a href="viewUpdateMenu.php?updateID=<?=$index?>">
                   <button class="btn btn-warning">Update</button>

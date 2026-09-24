@@ -56,8 +56,10 @@
                 <a href="viewUpdateMenu.php?updateID=<?=$index?>">
                   <button class="btn btn-warning">Update</button>
                 </a>
-                <a href="controllerMenu.php?deleteID=<?=$index?>">
-                  <button class="btn btn-danger">Delete</button>
+                <a href="controllerMenu.php?deleteID=<?=$index?>" 
+                    class="btn btn-danger" 
+                    onclick="return confirm('Apakah Anda yakin ingin menghapus menu <?=htmlspecialchars($menu->nama)?>?');">
+                    Delete
                 </a>
                 </td>
               </tr>

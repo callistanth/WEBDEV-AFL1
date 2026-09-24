@@ -43,7 +43,7 @@
             <div class="form-group col-md-6">
                 <label for="inputKategori">Kategori</label>
                 <select class="form-control" id="inputKategori" name="inputKategori" required>
-                    <option value="" disabled selected>-- Pilih Kategori --</option>
+                    <option value="" disabled selected>Pilih Kategori</option>
                     <option value="Makanan">Makanan</option>
                     <option value="Minuman">Minuman</option>
                     <option value="Camilan">Camilan</option>

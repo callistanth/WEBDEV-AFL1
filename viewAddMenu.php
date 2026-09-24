@@ -28,14 +28,14 @@
           <form method= "POST" action = "controllerMenu.php">
           <div class="form-group">
             <label for="inputNama">Nama</label>
-              <input type="text" class="form-control" name="inputNama">
+              <input type="text" class="form-control" name="inputNama" placeholder="Input Nama">
             </div>
 
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputKategori">Kategori</label>
                 <select class="form-control" id="inputKategori" name="inputKategori" required>
-                    <option value="" disabled selected>-- Pilih Kategori --</option>
+                    <option value="" disabled selected>Pilih Kategori</option>
                     <option value="Makanan">Makanan</option>
                     <option value="Minuman">Minuman</option>
                     <option value="Camilan">Camilan</option>
@@ -45,7 +45,7 @@
 
               <div class="form-group col-md-6">
                 <label for="inputHarga">Harga</label>
-                <input type="text" class="form-control" name="inputHarga">
+                <input type="text" class="form-control" name="inputHarga" placeholder="Input Harga">
               </div>
             </div>
 

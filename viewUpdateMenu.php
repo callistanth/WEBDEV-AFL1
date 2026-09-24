@@ -41,9 +41,15 @@
 
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputKategori">Kategori</label>
-              <input type="text" class="form-control" name="inputKategori" value="<?=$menu->kategori?>">
-            </div>
+                <label for="inputKategori">Kategori</label>
+                <select class="form-control" id="inputKategori" name="inputKategori" required>
+                    <option value="" disabled selected>-- Pilih Kategori --</option>
+                    <option value="Makanan">Makanan</option>
+                    <option value="Minuman">Minuman</option>
+                    <option value="Camilan">Camilan</option>
+                    <option value="Dessert">Dessert</option>
+                </select>
+                </div>
 
             <div class="form-group col-md-6">
               <label for="inputHarga">Harga</label>

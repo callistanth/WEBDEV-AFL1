@@ -26,7 +26,16 @@
               <a class="nav-link" href="viewMenu.php">List Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="viewAddMember.php">Tambah Menu</a>
+              <a class="nav-link" href="viewAddMenu.php">Tambah Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="viewDiskon.php">Daftar Diskon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="viewAddDiskon.php">Tambah Diskon</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="viewMenuDiskon.php">Menu Diskon</a>
             </li>
           </ul>
         </div>
@@ -43,7 +52,7 @@
             <div class="form-group col-md-6">
                 <label for="inputKategori">Kategori</label>
                 <select class="form-control" id="inputKategori" name="inputKategori" required>
-                    <option value="" disabled selected>Pilih Kategori</option>
+                    <option value="" disabled selected>-- Pilih Kategori --</option>
                     <option value="Makanan">Makanan</option>
                     <option value="Minuman">Minuman</option>
                     <option value="Camilan">Camilan</option>

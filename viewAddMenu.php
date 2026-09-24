@@ -18,7 +18,13 @@
               <a class="nav-link" href="viewMenu.php">List Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="viewAddMember.php">Tambah Menu</a>
+              <a class="nav-link active" href="viewAddMenu.php">Tambah Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="viewDiskon.php">List Diskon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="viewAddDiskon.php">Tambah Diskon</a>
             </li>
           </ul>
         </div>
